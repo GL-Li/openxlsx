@@ -3154,6 +3154,8 @@ Workbook$methods(
     ## HyperLinks from nTables+3 to nTables+3+nHyperLinks-1
     ## vmlDrawing to have rId
 
+    t1 <- Sys.time()
+    
     sheetRIds <-
       as.integer(unlist(regmatches(
         workbook$sheets,
@@ -3484,6 +3486,8 @@ Workbook$methods(
           )
       }
     }
+    print("preSaveCleanUp time is: ")
+    print(sys.Sys.time())
   }
 )
 
