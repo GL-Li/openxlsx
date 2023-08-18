@@ -3487,7 +3487,7 @@ Workbook$methods(
       }
     }
     print("preSaveCleanUp time is: ")
-    print(sys.Sys.time())
+    print(Sys.time() - t1)
   }
 )
 
